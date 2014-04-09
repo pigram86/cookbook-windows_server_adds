@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: windows_server_adds
-# Recipe:: default
+# Recipe:: w2k8r2
 #
 # Copyright (C) 2014 Todd Pigram
 # 
@@ -16,11 +16,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-case node['platform_version']
-when "6.3.9600"
-  include_recipe "windows_server_default::w2012r2"
-when "6.2.9200"
-  include_recipe "windows_server_default::w2012"
-when "6.1.7601"
-  include_recipe "windows_server_default::w2k8r2"
-end
